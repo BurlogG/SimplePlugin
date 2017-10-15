@@ -17,7 +17,7 @@ import javax.inject.Inject;
         version = "0.1-SNAPSHOT",
         description = "Супер-плагин!",
         url = "https://spongeapi.com",
-        authors = "Xakep_SDK")
+        authors = "BurlogG")
 public class SimplePlugin {
 
     @Inject
@@ -25,12 +25,12 @@ public class SimplePlugin {
 
     @Listener
     public void onGameInit(GameInitializationEvent event) {
-        logger.info("Hello World!");
+        logger.info("Всем привет!");
     }
 
     @Listener
     public void onPlayerJoin(ClientConnectionEvent.Join event, @Root Player player) {
         String msg = "Привет, " + player.getName();
-        player.sendMessage(Text.builder(msg).color(TextColors.BLUE).build());
+        player.sendMessage(Text.builder(msg).color(TextColors.WHITE).build());
     }
 }
