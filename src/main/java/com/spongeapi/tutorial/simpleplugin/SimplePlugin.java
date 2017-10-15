@@ -15,7 +15,7 @@ import javax.inject.Inject;
 @Plugin(id = "simpleplugin",
         name = "Simple Plugin",
         version = "0.1-SNAPSHOT",
-        description = "Супер-плагин!",
+        description = "Тест-плагин!",
         url = "https://spongeapi.com",
         authors = "BurlogG")
 public class SimplePlugin {
